@@ -1,5 +1,5 @@
 /*
-Theme Name: My Theme
+Theme Name: WP Test Theme
 Author: Tomas Simko
 Description: Innovation Cloud Transform
 Version: 0.1
@@ -15,7 +15,6 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
 }
-
 .container { 
   margin: 0 auto;
 	max-width: 940px; 
