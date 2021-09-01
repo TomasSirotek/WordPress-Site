@@ -7,7 +7,7 @@
     <title><?php bloginfo("name") ?></title>
   </head>
   <body>
-    <div class="header" style="background-image: url(<?php echo get_template_directory_uri()?>/images/bg.jpg);">
+    <div class="header" style="background-image: url('<?php echo get_field('website_bg')['url']; ?>')">
       <div class="container">
         <h1>
         <?php bloginfo("name")?>
@@ -15,6 +15,15 @@
         <p>
         <?php bloginfo("description")?>
         </p>
-        <a class="btn" href="">Learn More</a>
+        <?php
+        $button = get_field('button');
+        ?>
+        <a 
+        class="btn"
+        role='button'
+        href="<?php echo $button['url']; ?>"
+        target="<?php echo $button['target']; ?>">
+        <?php echo $button['title'];?>
+       </a>
       </div>
     </div>

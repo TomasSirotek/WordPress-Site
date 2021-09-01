@@ -113,8 +113,7 @@ body {
 /* Jumbotron */
 .jumbotron {
 	height: 600px; 
-	text-align: right;
-  background: url('https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/jumbotron_bg.jpg');
+	text-align: right; 
   background-size: no-repeat center center;
   background-size: cover;
 
@@ -143,7 +142,7 @@ body {
 }
 
 .footer p {
-  
+  text-align: center;
   line-height: 80px;
   height: 80px;
   color: #FFF;

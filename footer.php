@@ -1,6 +1,8 @@
 <div class="footer">
       <p>
-        @Innovation Cloud Conference
+        <?php 
+        echo get_field('footer_info');
+        ?>
       </p>
     </div>
     <?php wp_footer();?>

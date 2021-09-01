@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php 
+get_header(); ?>
+
+
     <div class="main">      
       <div class="container">
 
@@ -11,15 +14,24 @@
       <?php endwhile; ?>
     </div>
 
-    <div class="jumbotron">
+    <div class="jumbotron" style="background-image: url('<?php echo get_field('jumbotron_background')['url']; ?>')">
       <div class="container"> 
       <h1>
           <?php the_field("jumbotron") ?>
         </h1>
         <p>
-          Receive weekly insights from industry insiders.
+        <?php the_field("jumbotron_description") ?>
         </p>
-        <a class="btn" href="">Join</a>
+        <?php 
+          $secondButton = get_field('jumbotron_btn');
+        ?>
+        <a 
+        class="btn"
+        role='button'
+        href="<?php echo $secondButton['url']; ?>"
+        target="<?php echo $secondButton['target']; ?>">
+        <?php echo $secondButton['title'];?>
+       </a>
       </div>
     </div>
   <?php get_footer(); ?>
