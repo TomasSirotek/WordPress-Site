@@ -27,7 +27,7 @@ This is the assignment project for remaking basic HTML CSS website to Wordpress 
 Use PHP functions to fetch the content from Wordpress (title and content) and the Advanced Custom Fields plugin fr all other dynamic content.
 
 - Setting up Wordpress on local MAMP enviroment
-- Implemeting WP and PHP in basic HTML, CSS website
+- Implementing WP and PHP in basic HTML, CSS website
 
 ### Screenshot
 
